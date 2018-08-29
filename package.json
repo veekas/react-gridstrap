@@ -1,0 +1,25 @@
+{
+  "name": "react-gridstrap",
+  "version": "1.0.0",
+  "description": "React grid components using CSS Grid with a Bootstrap-like API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veekas/react-gridstrap.git"
+  },
+  "keywords": [
+    "react",
+    "css-grid",
+    "bootstrap",
+    "grid"
+  ],
+  "author": "Veekas Shrivastava <veekas@veekasmeansprogress.com> (https://www.veekasmeansprogress.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/veekas/react-gridstrap/issues"
+  },
+  "homepage": "https://github.com/veekas/react-gridstrap#readme"
+}
