@@ -1,11 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'react-emotion';
 
 const Row = ({ children, className, ...props }) => {
+  const RowDiv = styled('div')`
+    box-sizing: border-box;
+    position: relative;
+
+  `;
+
   return (
-    <div className={className} {...props}>
+    <RowDiv className={className} {...props}>
       {children}
-    </div>
+    </RowDiv>
   );
 }
 
@@ -18,3 +25,5 @@ Row.defaultProps = {
   children: null,
   className: '',
 };
+
+export default Row;
