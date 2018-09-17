@@ -4,18 +4,31 @@
   "description": "React grid components using CSS Grid with a Bootstrap-like API",
   "main": "src/index.js",
   "scripts": {
-    "test": "yarn test"
+    "build": "rm -rf build && babel src -d build",
+    "commit": "git cz",
+    "docs": "styleguidist build",
+    "lint": "eslint src",
+    "start": "styleguidist server",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/veekas/react-gridstrap.git"
   },
+  "files": [
+    "build",
+    "src"
+  ],
   "keywords": [
     "react",
     "css-grid",
     "bootstrap",
     "grid"
   ],
+  "engines": {
+    "node": "^8.12.0"
+  },
   "author": "Veekas Shrivastava <veekas@veekasmeansprogress.com> (https://www.veekasmeansprogress.com/)",
   "license": "MIT",
   "bugs": {
@@ -23,10 +36,31 @@
   },
   "homepage": "https://github.com/veekas/react-gridstrap#readme",
   "dependencies": {
+    "emotion": "9.2.9",
     "react": "16.5.1",
-    "react-emotion": "9.2.8"
+    "react-emotion": "9.2.9"
   },
   "devDependencies": {
-    "prop-types": "15.6.2"
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-1": "6.24.1",
+    "commitizen": "2.10.1",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "5.6.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.1",
+    "jest": "23.6.0",
+    "prop-types": "15.6.2",
+    "react-dom": "16.5.1",
+    "react-styleguidist": "7.3.8",
+    "webpack": "4.19.0",
+    "webpack-blocks": "1.0.0"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
