@@ -57,6 +57,7 @@
     "prop-types": "15.6.2",
     "react-dom": "16.5.1",
     "react-styleguidist": "7.3.8",
+    "react-test-renderer": "16.5.1",
     "webpack": "4.19.0",
     "webpack-blocks": "1.0.0"
   },
