@@ -13,7 +13,7 @@ const Container = ({ children, className, ...props }) => {
   `;
 
   return (
-    <ContainerDiv style={containerStyle} className={className} {...props}>
+    <ContainerDiv className={className} {...props}>
       {children}
     </ContainerDiv>
   );
