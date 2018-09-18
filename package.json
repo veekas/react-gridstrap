@@ -38,8 +38,10 @@
   "homepage": "https://github.com/veekas/react-gridstrap#readme",
   "dependencies": {
     "emotion": "9.2.9",
-    "react": "16.5.1",
     "react-emotion": "9.2.9"
+  },
+  "peerDependencies": {
+    "react": "16.5.1"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -57,6 +59,7 @@
     "ghooks": "2.0.4",
     "jest": "23.6.0",
     "prop-types": "15.6.2",
+    "react": "16.5.1",
     "react-dom": "16.5.1",
     "react-styleguidist": "7.3.8",
     "react-test-renderer": "16.5.1",
@@ -68,7 +71,7 @@
   },
   "config": {
     "ghooks": {
-      "commit-msg": "yarn test && yarn lint"
+      "commit-msg": "yarn test && yarn lint && yarn docs"
     },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
@@ -77,5 +80,12 @@
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-env",
+      "babel-preset-react",
+      "babel-preset-stage-1"
+    ]
   }
 }
