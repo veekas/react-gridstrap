@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import Container from './';
+import Row from '.';
 
-describe('Container', () => {
+describe('Row', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Container />, div);
+    ReactDOM.render(<Row />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('matches snapshot', () => {
     const tree = renderer
-      .create(<Container />)
+      .create(<Row />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

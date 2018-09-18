@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import Col from './';
+import Col from '.';
 
 describe('Col', () => {
   it('renders without crashing', () => {
