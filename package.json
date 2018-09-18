@@ -5,10 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "build": "rm -rf build && babel src -d build",
-    "commit": "git cz",
+    "commit": "git-cz",
     "docs": "styleguidist build",
     "lint": "eslint src",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "start": "styleguidist server",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -65,7 +65,9 @@
     "travis-deploy-once": "^5.0.7",
     "semantic-release": "^15.9.15"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
