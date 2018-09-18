@@ -4,7 +4,7 @@
   "description": "React grid components using CSS Grid with a Bootstrap-like API",
   "main": "build/index.js",
   "scripts": {
-    "build": "rimraf build && babel --copy-files src -d build",
+    "build": "rimraf build && babel src -d build --ignore *.test.*",
     "commit": "git-cz",
     "docs": "styleguidist build",
     "lint": "eslint src",
