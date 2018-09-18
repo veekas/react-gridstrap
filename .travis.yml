@@ -14,5 +14,6 @@ branches:
 script:
   - yarn test
   - yarn lint
+  - yarn build
 after_success:
   - yarn travis-deploy-once "yarn semantic-release"
