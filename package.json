@@ -55,22 +55,23 @@
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
     "eslint-plugin-react": "7.11.1",
+    "ghooks": "2.0.4",
     "jest": "23.6.0",
     "prop-types": "15.6.2",
     "react-dom": "16.5.1",
     "react-styleguidist": "7.3.8",
     "react-test-renderer": "16.5.1",
-    "webpack": "4.19.0",
-    "webpack-blocks": "1.0.0",
+    "semantic-release": "^15.9.15",
     "travis-deploy-once": "^5.0.7",
-    "semantic-release": "^15.9.15"
+    "webpack": "4.19.0",
+    "webpack-blocks": "1.0.0"
   },
   "config": {
+    "ghooks": {
+      "commit-msg": "yarn test && yarn lint"
+    },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
-  },
-  "release": {
-
   }
 }
