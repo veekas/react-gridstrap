@@ -6645,6 +6645,10 @@ react-icons@^2.2.7:
   dependencies:
     react-icon-base "2.1.0"
 
+react-is@^16.5.1:
+  version "16.5.1"
+  resolved "http://local-npm-proxy.elasticbeanstalk.com/react-is/-/react-is-16.5.1.tgz#c6e8734fd548a22e1cef4fd0833afbeb433b85ee"
+
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "http://local-npm-proxy.elasticbeanstalk.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
@@ -6712,6 +6716,15 @@ react-styleguidist@7.3.8:
     unist-util-visit "^1.3.1"
     webpack-dev-server "^2.11.2"
     webpack-merge "^4.1.3"
+
+react-test-renderer@16.5.1:
+  version "16.5.1"
+  resolved "http://local-npm-proxy.elasticbeanstalk.com/react-test-renderer/-/react-test-renderer-16.5.1.tgz#17f020fb0cf884cadebb5240d9d9c23452f18299"
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    react-is "^16.5.1"
+    schedule "^0.4.0"
 
 react@16.5.1:
   version "16.5.1"

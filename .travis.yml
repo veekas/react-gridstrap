@@ -1,0 +1,23 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '10'
+  - '9'
+  - '8'
+  - '6'
+branches:
+  only:
+    - master
+before_script:
+  - yarn prune
+script:
+  - yarn test
+  - yarn lint
+after_success:
+  - yarn travis-deploy-once "yarn semantic-release"
