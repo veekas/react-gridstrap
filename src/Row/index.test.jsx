@@ -10,7 +10,7 @@ describe('Row', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('matches snapshot', () => {
+  it('matches snapshot when passed zero props', () => {
     const tree = renderer
       .create(<Row />)
       .toJSON();

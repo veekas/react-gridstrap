@@ -6,7 +6,6 @@ const Row = ({ children, className, ...props }) => {
   const RowDiv = styled('div')`
     box-sizing: border-box;
     position: relative;
-
   `;
 
   return (
@@ -23,7 +22,7 @@ Row.propTypes = {
 
 Row.defaultProps = {
   children: null,
-  className: '',
+  className: null,
 };
 
 export default Row;
