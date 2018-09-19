@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 
-const Col = ({ children, className, ...props }) => {
+const Col = ({ children, className, xs, sm, md, lg, xl, ...props }) => {
   const ColDiv = styled('div')`
     box-sizing: border-box;
     position: relative;
-
   `;
 
   return (
@@ -19,11 +18,21 @@ const Col = ({ children, className, ...props }) => {
 Col.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  xs: PropTypes.bool,
+  sm: PropTypes.bool,
+  md: PropTypes.bool,
+  lg: PropTypes.bool,
+  xl: PropTypes.bool,
 };
 
 Col.defaultProps = {
   children: null,
-  className: '',
+  className: null,
+  xs: false,
+  sm: false,
+  md: false,
+  lg: false,
+  xl: false,
 };
 
 export default Col;
