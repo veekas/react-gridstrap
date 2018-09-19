@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Container matches snapshot 1`] = `
+exports[`Container matches snapshot when passed the "fluid" prop 1`] = `
 <div
   className="css-1dg94ii"
+/>
+`;
+
+exports[`Container matches snapshot when passed zero props 1`] = `
+<div
+  className="css-13t1gst"
 />
 `;
