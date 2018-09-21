@@ -2,12 +2,12 @@
 
 exports[`Container matches snapshot when passed the "fluid" prop 1`] = `
 <div
-  className="css-1dg94ii"
+  className="css-1jvlp5i"
 />
 `;
 
 exports[`Container matches snapshot when passed zero props 1`] = `
 <div
-  className="css-13t1gst"
+  className="css-yreda1"
 />
 `;
