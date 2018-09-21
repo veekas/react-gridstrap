@@ -9,7 +9,7 @@ const Container = ({ children, className, fluid, ...props }) => {
     display: grid;
     width: ${fluid ? '100%' : 'auto'};
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 25px / 25px;
+    grid-gap: 0;
   `;
 
   return (

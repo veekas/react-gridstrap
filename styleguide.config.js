@@ -5,8 +5,8 @@ module.exports = {
   title: `React Gridstrap (v${version})`,
   sections: [
     {
-      // name: 'Examples',
-      components: './src/**/index.jsx',
+      name: '',
+      components: './src/**/*.jsx',
       content: './docs.md'
     },
   ],

@@ -1,25 +1,45 @@
-# Test docs
+# React Gridstrap
+
+## Components
 
 ### Container
 
 ```jsx
-<Container fluid style={{ lineHeight: '32px' }}>
-  Hello Container
+<Container>
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
 </Container>
 ```
 
-### Row
+#### Fluid
 
 ```jsx
-<Row fluid style={{ lineHeight: '32px' }}>
-  Hello Row
-</Row>
-```
-
-### Col
-
-```jsx
-<Col fluid style={{ lineHeight: '32px' }}>
-  Hello Col
-</Col>
+<Container fluid>
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+  <DemoCol />
+</Container>
 ```
