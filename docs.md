@@ -1,25 +1,33 @@
 # React Gridstrap
 
-## Components
+## Features
 
 ### Container
 
+- `fluid` is a boolean value. If set to true, it sets container width to 100%
+- `fluidColumns` allows one to dynamically set the minimum column width within the container. It takes a string with a width value
+
+
+## Components
+
+### Fixed-Width Container
+
 ```jsx
-<Container>
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
+<Container fluidColumns={'75px'}>
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
 </Container>
 ```
 
@@ -27,19 +35,19 @@
 
 ```jsx
 <Container fluid>
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
 </Container>
 ```

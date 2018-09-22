@@ -71,7 +71,7 @@
   },
   "config": {
     "ghooks": {
-      "commit-msg": "yarn test && yarn lint && yarn docs && git add docs/"
+      "commit-msg": "yarn test && yarn lint"
     },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
