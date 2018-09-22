@@ -5,21 +5,21 @@
 ### Container
 
 ```jsx
-<Container>
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
+<Container style={{ width: '600px' }}>
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
 </Container>
 ```
 
@@ -27,19 +27,19 @@
 
 ```jsx
 <Container fluid>
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
-  <DemoCol />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
+  <ColumnDemo />
 </Container>
 ```
