@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'react-emotion';
-import Col from '../Col';
+import Column from '../Column';
 
-const DemoCol = () => {
-  const DemoColDiv = styled(Col)`
+const ColumnDemo = () => {
+  const ColumnDemoDiv = styled(Column)`
     width: 100%;
     height: 50px;
     border: 2px solid darkslateblue;
@@ -11,8 +11,8 @@ const DemoCol = () => {
   `;
 
   return (
-    <DemoColDiv />
+    <ColumnDemoDiv />
   );
 }
 
-export default DemoCol;
+export default ColumnDemo;

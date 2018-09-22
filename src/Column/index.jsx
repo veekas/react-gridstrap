@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 
-const Col = ({ children, className, xs, sm, md, lg, xl, ...props }) => {
-  const ColDiv = styled('div')`
+const Column = ({ children, className, xs, sm, md, lg, xl, ...props }) => {
+  const ColumnDiv = styled('div')`
     box-sizing: border-box;
     position: relative;
   `;
 
   return (
-    <ColDiv className={className} {...props}>
+    <ColumnDiv className={className} {...props}>
       {children}
-    </ColDiv>
+    </ColumnDiv>
   );
 }
 
-Col.propTypes = {
+Column.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   xs: PropTypes.bool,
@@ -25,7 +25,7 @@ Col.propTypes = {
   xl: PropTypes.bool,
 };
 
-Col.defaultProps = {
+Column.defaultProps = {
   children: null,
   className: null,
   xs: false,
@@ -35,4 +35,4 @@ Col.defaultProps = {
   xl: false,
 };
 
-export default Col;
+export default Column;

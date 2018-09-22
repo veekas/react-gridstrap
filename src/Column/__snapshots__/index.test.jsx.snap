@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Col matches snapshot when passed zero props 1`] = `
+exports[`Column matches snapshot when passed zero props 1`] = `
 <div
   className="css-dtn8f5"
 />

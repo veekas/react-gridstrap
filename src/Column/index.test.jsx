@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
-import Col from '.';
+import Column from '.';
 
-describe('Col', () => {
+describe('Column', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Col />, div);
+    ReactDOM.render(<Column />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('matches snapshot when passed zero props', () => {
     const tree = renderer
-      .create(<Col />)
+      .create(<Column />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

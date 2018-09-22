@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'react-emotion';
 import Row from '../Row';
 
-const DemoRow = () => {
-  const DemoRowDiv = styled(Row)`
+const RowDemo = () => {
+  const RowDemoDiv = styled(Row)`
   `;
 
   return (
-    <DemoRowDiv />
+    <RowDemoDiv />
   );
 }
 
-export default DemoRow;
+export default RowDemo;
