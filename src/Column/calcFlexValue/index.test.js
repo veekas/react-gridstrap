@@ -20,6 +20,13 @@ describe('calcFlexGrow', () => {
     expect(flexValue).toBe('flex:100;@media(min-width:0px){flex:600;}');
   });
 
+  it('accepts "auto"', () => {
+    const flexValue = calcFlexValue({ xs: 'auto' })
+      .replace(/\s/g, ''); // standardize string value
+
+    expect(flexValue).toBe('flex:100;@media(min-width:0px){flex:100;}');
+  });
+
   it('ignores keys that are not valid breakpoints', () => {
     const flexValue = calcFlexValue({ incorrectKey: 6 });
     expect(flexValue).toBe('flex: 1 0 0;');

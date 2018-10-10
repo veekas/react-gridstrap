@@ -12,7 +12,7 @@ const calcFlexValue = (sizes) => {
         && allowedValues.includes(`${sizes[size]}`)
       ) {
         const minWidthValue = breakpoints[size];
-        const growValue = sizes[size];
+        const growValue = sizes[size] === 'auto' ? '1' : sizes[size];
 
         mediaQueries += `
           @media (min-width: ${minWidthValue}px) {
