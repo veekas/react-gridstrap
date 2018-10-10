@@ -6,6 +6,10 @@ const Row = ({ children, className, ...props }) => {
   const RowDiv = styled('div')`
     box-sizing: border-box;
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
   `;
 
   return (

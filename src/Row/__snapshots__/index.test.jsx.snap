@@ -2,6 +2,6 @@
 
 exports[`Row matches snapshot when passed zero props 1`] = `
 <div
-  className="css-dtn8f5"
+  className="css-5u2h7w"
 />
 `;
