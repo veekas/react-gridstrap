@@ -10,8 +10,8 @@
     "lint": "eslint src",
     "semantic-release": "semantic-release",
     "start": "styleguidist server",
-    "test": "jest",
-    "test:watch": "jest --watch --ignore *.test.*",
+    "test": "jest src/",
+    "test:watch": "jest src/ --watch",
     "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
