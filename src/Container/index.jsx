@@ -4,9 +4,6 @@ import styled from 'react-emotion';
 
 const Container = ({ children, className, fluid, ...props }) => {
   const ContainerDiv = styled('div')`
-    box-sizing: border-box;
-    position: relative;
-    display: grid;
     width: ${fluid ? '100%' : 'auto'};
   `;
 

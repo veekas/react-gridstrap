@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 
 const Row = ({ children, className, ...props }) => {
+  const childrenCount = Object.keys(React.Children).length;
+  const columnsToRender = childrenCount >= 12 ? 12 : childrenCount;
+
   const RowDiv = styled('div')`
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    align-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
   `;
 
   return (

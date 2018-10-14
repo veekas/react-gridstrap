@@ -2,14 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 
-import calcFlexValue from './calcFlexValue';
+import calcSpanValue from './calcSpanValue';
 import { allowedValues } from './utils';
 
 const Column = ({ children, className, xs, sm, md, lg, xl, ...props }) => {
   const ColumnDiv = styled('div')`
-    box-sizing: border-box;
-    position: relative;
-    ${calcFlexValue({ xs, sm, md, lg, xl })}
+    ${calcSpanValue({ xs, sm, md, lg, xl })}
   `;
 
   return (

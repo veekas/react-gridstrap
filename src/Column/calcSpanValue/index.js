@@ -1,7 +1,7 @@
 import { allowedValues, breakpoints } from '../utils';
 
-const calcFlexValue = (sizes) => {
-  let mediaQueries = 'flex: 1 0 0;';
+const calcSpanValue = (sizes) => {
+  let mediaQueries = '';
 
   if (typeof sizes === 'object') {
     const sizesArray = Object.keys(sizes);
@@ -12,11 +12,11 @@ const calcFlexValue = (sizes) => {
         && allowedValues.includes(`${sizes[size]}`)
       ) {
         const minWidthValue = breakpoints[size];
-        const growValue = sizes[size] === 'auto' ? '1' : sizes[size];
+        const spanValue = sizes[size] === 'auto' ? '1' : sizes[size];
 
         mediaQueries += `
           @media (min-width: ${minWidthValue}px) {
-            flex: ${growValue} 0 0;
+            grid-column-end: span ${spanValue};
           }
         `;
       }
@@ -26,4 +26,4 @@ const calcFlexValue = (sizes) => {
   return mediaQueries;
 };
 
-export default calcFlexValue;
+export default calcSpanValue;

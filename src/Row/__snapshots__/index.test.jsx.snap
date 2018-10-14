@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Row matches snapshot when passed zero props 1`] = `
-<div
-  className="css-5u2h7w"
-/>
-`;

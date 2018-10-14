@@ -6,6 +6,8 @@
 /coverage
 
 # production
+/docs/build
+/docs
 /build
 
 # logs

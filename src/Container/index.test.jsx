@@ -10,17 +10,17 @@ describe('Container', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('matches snapshot when passed zero props', () => {
-    const tree = renderer
-      .create(<Container />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  // it('matches snapshot when passed zero props', () => {
+  //   const tree = renderer
+  //     .create(<Container />)
+  //     .toJSON();
+  //   expect(tree).toMatchSnapshot();
+  // });
 
-  it('matches snapshot when passed the "fluid" prop', () => {
-    const tree = renderer
-      .create(<Container fluid />)
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  // it('matches snapshot when passed the "fluid" prop', () => {
+  //   const tree = renderer
+  //     .create(<Container fluid />)
+  //     .toJSON();
+  //   expect(tree).toMatchSnapshot();
+  // });
 });
